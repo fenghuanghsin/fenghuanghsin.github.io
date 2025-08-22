@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>星空下微風輕拂黃光閃耀的世界三</title><link>/</link><description>Recent content on 星空下微風輕拂黃光閃耀的世界三</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Thu, 21 Aug 2025 00:06:11 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>萬香傳統手工豆花</title><link>/post/%E8%90%AC%E9%A6%99%E5%82%B3%E7%B5%B1%E6%89%8B%E5%B7%A5%E8%B1%86%E8%8A%B1/</link><pubDate>Thu, 21 Aug 2025 00:06:11 +0000</pubDate><guid>/post/%E8%90%AC%E9%A6%99%E5%82%B3%E7%B5%B1%E6%89%8B%E5%B7%A5%E8%B1%86%E8%8A%B1/</guid><description>&lt;p>傳統豆花：35元&lt;/p>
+&lt;p>&lt;img src="/images/2025/08/21/20250821_173906.jpg"
+loading="lazy"
+alt="萬香傳統豆花之一"
+>&lt;/p>
+&lt;p>&lt;img src="/images/2025/08/21/20250821_172746.jpg"
+loading="lazy"
+alt="萬香傳統豆花之二"
+>&lt;/p></description></item><item><title>Hugo pdf to image</title><link>/post/hugo_pdf_to_image/</link><pubDate>Tue, 19 Aug 2025 21:04:55 +0800</pubDate><guid>/post/hugo_pdf_to_image/</guid><description>&lt;p>使用anvithks/hugo-embed-pdf-shortcode&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/anvithks/hugo-embed-pdf-shortcode" target="_blank" rel="noopener"
+>https://github.com/anvithks/hugo-embed-pdf-shortcode&lt;/a>&lt;/p>
+&lt;p>採用方法二:&lt;/p>
+&lt;p>對應Hugo資料夾下使用Command Prompt&lt;/p>
+&lt;p>git clone &lt;a class="link" href="https://github.com/anvithks/hugo-embed-pdf-shortcode.git" target="_blank" rel="noopener"
+>https://github.com/anvithks/hugo-embed-pdf-shortcode.git&lt;/a>&lt;/p>
+&lt;p>cd hugo-embed-pdf-shortcode&lt;/p>
+&lt;p>複製hugo-embed-pdf-shortcode\layouts資料夾裡面有\shortcodes\embed-pdf&lt;/p>
+&lt;p>到\layouts&lt;/p>
+&lt;p>複製hugo-embed-pdf-shortcode\static\js資料夾裡面有pdf-js&lt;/p>
+&lt;p>到static&lt;/p>
+&lt;p>使用語法:&lt;/p>
+&lt;p>{{移除文字&amp;lt; embed-pdf url=&amp;quot;/pdfs/114080_20110(1201).pdf&amp;quot; &amp;gt;移除文字}}&lt;/p>
+&lt;p>以static資料夾下為基準&lt;/p>
+&lt;p>Hugo pdf to image:&lt;/p>
+&lt;script src= '/js/pdf-js/build/pdf.js'>&lt;/script>
+&lt;style>
+#embed-pdf-container {
+position: relative;
+width: 100%;
+height: auto;
+min-height: 20vh;
+}
+.pdf-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 100%;
+height: auto;
+display: none;
+}
+#the-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 100%;
+height: auto;
+display: none;
+}
+.pdf-loadingWrapper {
+display: none;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 350px;
+}
+.pdf-loading {
+display: inline-block;
+width: 50px;
+height: 50px;
+border: 3px solid #d2d0d0;;
+border-radius: 50%;
+border-top-color: #383838;
+animation: spin 1s ease-in-out infinite;
+-webkit-animation: spin 1s ease-in-out infinite;
+}
+#overlayText {
+word-wrap: break-word;
+display: grid;
+justify-content: end;
+}
+#overlayText a {
+position: relative;
+top: 10px;
+right: 4px;
+color: #000;
+margin: auto;
+background-color: #eeeeee;
+padding: 0.3em 1em;
+border: solid 2px;
+border-radius: 12px;
+border-color: #00000030;
+text-decoration: none;
+}
+#overlayText svg {
+height: clamp(1em, 2vw, 1.4em);
+width: clamp(1em, 2vw, 1.4em);
+}
+@keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+&lt;/style>&lt;div class="embed-pdf-container" id="embed-pdf-container-78cf2d99">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-78cf2d99">
+&lt;div class="pdf-loading" id="pdf-loading-78cf2d99">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/pdftest.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-78cf2d99">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-78cf2d99">
+&lt;button id="pdf-prev-78cf2d99">Previous&lt;/button>
+&lt;button id="pdf-next-78cf2d99">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-78cf2d99">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-78cf2d99">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-78cf2d99" href="/pdfs/pdftest.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-78cf2d99" href="/pdfs/pdftest.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/pdftest.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-78cf2d99'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-78cf2d99"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-78cf2d99');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-78cf2d99').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-78cf2d99').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-78cf2d99').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-78cf2d99').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script></description></item><item><title>義美台灣花生巧克力雪糕</title><link>/post/%E7%BE%A9%E7%BE%8E%E5%8F%B0%E7%81%A3%E8%8A%B1%E7%94%9F%E5%B7%A7%E5%85%8B%E5%8A%9B%E9%9B%AA%E7%B3%95/</link><pubDate>Sat, 16 Aug 2025 19:30:45 +0000</pubDate><guid>/post/%E7%BE%A9%E7%BE%8E%E5%8F%B0%E7%81%A3%E8%8A%B1%E7%94%9F%E5%B7%A7%E5%85%8B%E5%8A%9B%E9%9B%AA%E7%B3%95/</guid><description>&lt;p>一支原價：40元&lt;/p>
+&lt;p>&lt;img src="/images/2025/08/16/20250816_160258.jpg"
+loading="lazy"
+alt="一支義美台灣花生巧克力雪糕正面"
+>&lt;/p>
+&lt;p>&lt;img src="/images/2025/08/16/20250816_160316.jpg"
+loading="lazy"
+alt="一支義美台灣花生巧克力雪糕背面"
+>&lt;/p>
+&lt;p>4入裝：115元 (平均單價：28.75元)&lt;/p>
+&lt;p>&lt;img src="/images/2025/08/16/20250816_160334.jpg"
+loading="lazy"
+alt="一盒義美台灣花生巧克力雪糕正面"
+>&lt;/p>
+&lt;p>&lt;img src="/images/2025/08/16/20250816_160325.jpg"
+loading="lazy"
+alt="一盒義美台灣花生巧克力雪糕背面"
+>&lt;/p>
+&lt;p>商店: 大全聯(原大潤發)&lt;/p></description></item><item><title>遠洋牌紅燒鰻</title><link>/post/%E9%81%A0%E6%B4%8B%E7%89%8C%E7%B4%85%E7%87%92%E9%B0%BB/</link><pubDate>Sun, 10 Aug 2025 00:06:11 +0000</pubDate><guid>/post/%E9%81%A0%E6%B4%8B%E7%89%8C%E7%B4%85%E7%87%92%E9%B0%BB/</guid><description>&lt;p>&lt;img src="/images/2025/08/20250809_232749.jpg"
+loading="lazy"
+alt="遠洋牌紅燒鰻"
+>&lt;/p>
+&lt;p>單價: 37元&lt;/p>
+&lt;p>商店: 大全聯(原大潤發)&lt;/p></description></item><item><title>114年高考三級資訊處理考畢試題</title><link>/post/114%E5%B9%B4%E9%AB%98%E8%80%83%E4%B8%89%E7%B4%9A%E8%B3%87%E8%A8%8A%E8%99%95%E7%90%86%E8%80%83%E7%95%A2%E8%A9%A6%E9%A1%8C/</link><pubDate>Thu, 10 Jul 2025 23:59:59 +0000</pubDate><guid>/post/114%E5%B9%B4%E9%AB%98%E8%80%83%E4%B8%89%E7%B4%9A%E8%B3%87%E8%A8%8A%E8%99%95%E7%90%86%E8%80%83%E7%95%A2%E8%A9%A6%E9%A1%8C/</guid><description>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>日期&lt;/th>
+&lt;th>節次&lt;/th>
+&lt;th>預備時間&lt;/th>
+&lt;th>考試時間&lt;/th>
+&lt;th>科目名稱&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>114/07/08&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>08:40&lt;/td>
+&lt;td>09:00~11:00&lt;/td>
+&lt;td>國文（作文與測驗）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>114/07/08&lt;/td>
+&lt;td>2&lt;/td>
+&lt;td>12:50&lt;/td>
+&lt;td>13:00~15:00&lt;/td>
+&lt;td>資通網路與安全&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>114/07/08&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>15:50&lt;/td>
+&lt;td>16:00~17:00&lt;/td>
+&lt;td>法學知識與英文（包括中華民國憲法、法學緒論、英文）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>114/07/09&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>08:50&lt;/td>
+&lt;td>09:00~11:00&lt;/td>
+&lt;td>資料庫應用&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>114/07/09&lt;/td>
+&lt;td>5&lt;/td>
+&lt;td>12:50&lt;/td>
+&lt;td>13:00~15:00&lt;/td>
+&lt;td>資料結構&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>114/07/09&lt;/td>
+&lt;td>6&lt;/td>
+&lt;td>15:50&lt;/td>
+&lt;td>16:00~18:00&lt;/td>
+&lt;td>資訊管理&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>國文（作文與測驗）：
+&lt;div class="embed-pdf-container" id="embed-pdf-container-adcbf17d">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-adcbf17d">
+&lt;div class="pdf-loading" id="pdf-loading-adcbf17d">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114080_20110%281201%29.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-adcbf17d">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-adcbf17d">
+&lt;button id="pdf-prev-adcbf17d">Previous&lt;/button>
+&lt;button id="pdf-next-adcbf17d">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-adcbf17d">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-adcbf17d">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-adcbf17d" href="/pdfs/202507/114080_20110%281201%29.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-adcbf17d" href="/pdfs/202507/114080_20110%281201%29.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114080_20110(1201).pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-adcbf17d'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-adcbf17d"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-adcbf17d');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-adcbf17d').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-adcbf17d').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-adcbf17d').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-adcbf17d').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script>
+&lt;/p>
+&lt;p>資通網路與安全：
+&lt;div class="embed-pdf-container" id="embed-pdf-container-e9e09770">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-e9e09770">
+&lt;div class="pdf-loading" id="pdf-loading-e9e09770">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114080_27720.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-e9e09770">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-e9e09770">
+&lt;button id="pdf-prev-e9e09770">Previous&lt;/button>
+&lt;button id="pdf-next-e9e09770">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-e9e09770">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-e9e09770">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-e9e09770" href="/pdfs/202507/114080_27720.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-e9e09770" href="/pdfs/202507/114080_27720.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114080_27720.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-e9e09770'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-e9e09770"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-e9e09770');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-e9e09770').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-e9e09770').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-e9e09770').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-e9e09770').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script>
+&lt;/p>
+&lt;p>法學知識與英文（包括中華民國憲法、法學緒論、英文）：
+&lt;div class="embed-pdf-container" id="embed-pdf-container-eec62fe4">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-eec62fe4">
+&lt;div class="pdf-loading" id="pdf-loading-eec62fe4">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114080_3201.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-eec62fe4">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-eec62fe4">
+&lt;button id="pdf-prev-eec62fe4">Previous&lt;/button>
+&lt;button id="pdf-next-eec62fe4">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-eec62fe4">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-eec62fe4">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-eec62fe4" href="/pdfs/202507/114080_3201.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-eec62fe4" href="/pdfs/202507/114080_3201.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114080_3201.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-eec62fe4'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-eec62fe4"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-eec62fe4');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-eec62fe4').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-eec62fe4').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-eec62fe4').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-eec62fe4').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script>
+&lt;/p>
+&lt;p>資料庫應用：
+&lt;div class="embed-pdf-container" id="embed-pdf-container-4a2f082f">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-4a2f082f">
+&lt;div class="pdf-loading" id="pdf-loading-4a2f082f">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114080_27740.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-4a2f082f">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-4a2f082f">
+&lt;button id="pdf-prev-4a2f082f">Previous&lt;/button>
+&lt;button id="pdf-next-4a2f082f">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-4a2f082f">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-4a2f082f">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-4a2f082f" href="/pdfs/202507/114080_27740.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-4a2f082f" href="/pdfs/202507/114080_27740.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114080_27740.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-4a2f082f'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-4a2f082f"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-4a2f082f');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-4a2f082f').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-4a2f082f').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-4a2f082f').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-4a2f082f').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script>
+&lt;/p>
+&lt;p>資料結構：
+&lt;div class="embed-pdf-container" id="embed-pdf-container-d1fe8039">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-d1fe8039">
+&lt;div class="pdf-loading" id="pdf-loading-d1fe8039">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114080_27750.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-d1fe8039">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-d1fe8039">
+&lt;button id="pdf-prev-d1fe8039">Previous&lt;/button>
+&lt;button id="pdf-next-d1fe8039">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-d1fe8039">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-d1fe8039">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-d1fe8039" href="/pdfs/202507/114080_27750.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-d1fe8039" href="/pdfs/202507/114080_27750.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114080_27750.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-d1fe8039'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-d1fe8039"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-d1fe8039');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-d1fe8039').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-d1fe8039').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-d1fe8039').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-d1fe8039').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script>
+&lt;/p>
+&lt;p>資訊管理：
+&lt;div class="embed-pdf-container" id="embed-pdf-container-c7f527fa">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-c7f527fa">
+&lt;div class="pdf-loading" id="pdf-loading-c7f527fa">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114080_27760.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-c7f527fa">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-c7f527fa">
+&lt;button id="pdf-prev-c7f527fa">Previous&lt;/button>
+&lt;button id="pdf-next-c7f527fa">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-c7f527fa">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-c7f527fa">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-c7f527fa" href="/pdfs/202507/114080_27760.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-c7f527fa" href="/pdfs/202507/114080_27760.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114080_27760.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-c7f527fa'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-c7f527fa"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-c7f527fa');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-c7f527fa').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-c7f527fa').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-c7f527fa').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-c7f527fa').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script>
+&lt;/p></description></item><item><title>114年公務人員高考三級考試於7月8日至10日舉行</title><link>/post/114%E5%B9%B4%E5%85%AC%E5%8B%99%E4%BA%BA%E5%93%A1%E9%AB%98%E8%80%83%E4%B8%89%E7%B4%9A%E8%80%83%E8%A9%A6%E6%96%BC7%E6%9C%888%E6%97%A5%E8%87%B310%E6%97%A5%E8%88%89%E8%A1%8C/</link><pubDate>Mon, 07 Jul 2025 23:59:59 +0000</pubDate><guid>/post/114%E5%B9%B4%E5%85%AC%E5%8B%99%E4%BA%BA%E5%93%A1%E9%AB%98%E8%80%83%E4%B8%89%E7%B4%9A%E8%80%83%E8%A9%A6%E6%96%BC7%E6%9C%888%E6%97%A5%E8%87%B310%E6%97%A5%E8%88%89%E8%A1%8C/</guid><description>&lt;p>原始來源:&lt;/p>
+&lt;p>&lt;a class="link" href="https://wwwc.moex.gov.tw/main/news/wfrmNews.aspx?kind=3&amp;amp;menu_id=42&amp;amp;news_id=7524" target="_blank" rel="noopener"
+>https://wwwc.moex.gov.tw/main/news/wfrmNews.aspx?kind=3&amp;menu_id=42&amp;news_id=7524&lt;/a>&lt;/p>
+&lt;p>原始內容:&lt;/p>
+&lt;p>114/07/07&lt;/p>
+&lt;p>考選部表示，114年公務人員高考三級考試受丹娜絲颱風影響，已宣布將原訂考試日程依序順延至7月8日至10日舉行，即原6日考試移至8日，原7日考試移至9日，原8日考試移至10日。請應考人衡酌各自天候、交通等情形，注意應試的節次及考試時間，寬估赴考時間，建議及早抵達試區準備應試。&lt;/p>
+&lt;p>考選部提醒，除了高雄考區明誠中學應試地點調整為三民家商外，其餘試區應考人仍於原試場應試。應考人如欲了解試場位置，請至考選部全球資訊網本項考試「舉行相關事宜」之頁面查詢&lt;/p>
+&lt;p>（&lt;a class="link" href="https://wwwc.moex.gov.tw/main/exam/wFrmPropertyDetail.aspx?m=7404&amp;amp;c=114080" target="_blank" rel="noopener"
+>https://wwwc.moex.gov.tw/main/exam/wFrmPropertyDetail.aspx?m=7404&amp;c=114080&lt;/a>），或掃描考試通知書QRcode後點選試區，亦可於考試當日提早至試區公布欄查看試場所處位置。&lt;/p>
+&lt;script src= '/js/pdf-js/build/pdf.js'>&lt;/script>
+&lt;style>
+#embed-pdf-container {
+position: relative;
+width: 100%;
+height: auto;
+min-height: 20vh;
+}
+.pdf-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 100%;
+height: auto;
+display: none;
+}
+#the-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 100%;
+height: auto;
+display: none;
+}
+.pdf-loadingWrapper {
+display: none;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 350px;
+}
+.pdf-loading {
+display: inline-block;
+width: 50px;
+height: 50px;
+border: 3px solid #d2d0d0;;
+border-radius: 50%;
+border-top-color: #383838;
+animation: spin 1s ease-in-out infinite;
+-webkit-animation: spin 1s ease-in-out infinite;
+}
+#overlayText {
+word-wrap: break-word;
+display: grid;
+justify-content: end;
+}
+#overlayText a {
+position: relative;
+top: 10px;
+right: 4px;
+color: #000;
+margin: auto;
+background-color: #eeeeee;
+padding: 0.3em 1em;
+border: solid 2px;
+border-radius: 12px;
+border-color: #00000030;
+text-decoration: none;
+}
+#overlayText svg {
+height: clamp(1em, 2vw, 1.4em);
+width: clamp(1em, 2vw, 1.4em);
+}
+@keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+&lt;/style>&lt;div class="embed-pdf-container" id="embed-pdf-container-85637698">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-85637698">
+&lt;div class="pdf-loading" id="pdf-loading-85637698">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114%e5%b9%b4%e5%85%ac%e5%8b%99%e4%ba%ba%e5%93%a1%e9%ab%98%e7%ad%89%e8%80%83%e8%a9%a6%e4%b8%89%e7%b4%9a%e8%80%83%e8%a9%a6%e6%87%89%e8%a9%a6%e7%a7%91%e7%9b%ae%e5%8f%8a%e8%80%83%e8%a9%a6%e6%97%a5%e7%a8%8b%e8%a1%a8.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-85637698">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-85637698">
+&lt;button id="pdf-prev-85637698">Previous&lt;/button>
+&lt;button id="pdf-next-85637698">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-85637698">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-85637698">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-85637698" href="/pdfs/202507/114%e5%b9%b4%e5%85%ac%e5%8b%99%e4%ba%ba%e5%93%a1%e9%ab%98%e7%ad%89%e8%80%83%e8%a9%a6%e4%b8%89%e7%b4%9a%e8%80%83%e8%a9%a6%e6%87%89%e8%a9%a6%e7%a7%91%e7%9b%ae%e5%8f%8a%e8%80%83%e8%a9%a6%e6%97%a5%e7%a8%8b%e8%a1%a8.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-85637698" href="/pdfs/202507/114%e5%b9%b4%e5%85%ac%e5%8b%99%e4%ba%ba%e5%93%a1%e9%ab%98%e7%ad%89%e8%80%83%e8%a9%a6%e4%b8%89%e7%b4%9a%e8%80%83%e8%a9%a6%e6%87%89%e8%a9%a6%e7%a7%91%e7%9b%ae%e5%8f%8a%e8%80%83%e8%a9%a6%e6%97%a5%e7%a8%8b%e8%a1%a8.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114年公務人員高等考試三級考試應試科目及考試日程表.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-85637698'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-85637698"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-85637698');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-85637698').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-85637698').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-85637698').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-85637698').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script></description></item><item><title>114年公務人員高等考試三級考試暨普通考試考試通知書</title><link>/post/114%E5%B9%B4%E5%85%AC%E5%8B%99%E4%BA%BA%E5%93%A1%E9%AB%98%E7%AD%89%E8%80%83%E8%A9%A6%E4%B8%89%E7%B4%9A%E8%80%83%E8%A9%A6%E6%9A%A8%E6%99%AE%E9%80%9A%E8%80%83%E8%A9%A6%E5%B0%87%E8%87%AA6%E6%9C%8819%E6%97%A5%E8%B5%B7%E9%96%8B%E6%94%BE%E4%B8%8B%E8%BC%89%E8%80%83%E8%A9%A6%E9%80%9A%E7%9F%A5%E6%9B%B8/</link><pubDate>Tue, 17 Jun 2025 23:59:59 +0000</pubDate><guid>/post/114%E5%B9%B4%E5%85%AC%E5%8B%99%E4%BA%BA%E5%93%A1%E9%AB%98%E7%AD%89%E8%80%83%E8%A9%A6%E4%B8%89%E7%B4%9A%E8%80%83%E8%A9%A6%E6%9A%A8%E6%99%AE%E9%80%9A%E8%80%83%E8%A9%A6%E5%B0%87%E8%87%AA6%E6%9C%8819%E6%97%A5%E8%B5%B7%E9%96%8B%E6%94%BE%E4%B8%8B%E8%BC%89%E8%80%83%E8%A9%A6%E9%80%9A%E7%9F%A5%E6%9B%B8/</guid><description>&lt;p>原始來源:&lt;/p>
+&lt;p>&lt;a class="link" href="https://wwwc.moex.gov.tw/main/news/wfrmNews.aspx?kind=3&amp;amp;menu_id=42&amp;amp;news_id=7500" target="_blank" rel="noopener"
+>https://wwwc.moex.gov.tw/main/news/wfrmNews.aspx?kind=3&amp;menu_id=42&amp;news_id=7500&lt;/a>&lt;/p>
+&lt;p>原始內容:&lt;/p>
+&lt;p>114/06/17&lt;/p>
+&lt;p>114年公務人員高等考試三級考試暨普通考試之考試通知書，預定自114年6月19日起，於國家考試網路報名資訊系統之「考試通知書下載」項目開放下載，應考人請以空白紙張自行列印。
+國家考試期間不開放陪考，僅限行動不便或懷孕之應考人，得事先申請陪考，且一律採事先申請機制，不接受考試當天臨時提出申請，本考試應於114年6月19日至23日，登入國家考試網路報名資訊系統提出申請。經審核同意陪考者，考選部將另行通知應考人下載「同意陪考通知書」，陪考人員於考試當日應攜帶同意陪考通知書及本人身分證件，俾供試區工作人員查驗。&lt;/p>
+&lt;p>考選部另表示，國家考試考前一天不開放進入試區查看試場，應考人如欲了解試場位置，除考試當日於試區公布欄查看或至國家考試網路報名資訊系統「試區查詢」項下查詢，亦可至本部全球資訊網該項考試「舉行相關事宜」之頁面查詢，或掃描考試通知書QRcode，查看所處試場位置。另為提供更便捷、快速之服務，考試通知書增列國家考試電子計算器措施QRcode，應考人可提前查看相關資訊。&lt;/p>
+&lt;script src= '/js/pdf-js/build/pdf.js'>&lt;/script>
+&lt;style>
+#embed-pdf-container {
+position: relative;
+width: 100%;
+height: auto;
+min-height: 20vh;
+}
+.pdf-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 100%;
+height: auto;
+display: none;
+}
+#the-canvas {
+border: 1px solid black;
+direction: ltr;
+width: 100%;
+height: auto;
+display: none;
+}
+.pdf-loadingWrapper {
+display: none;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 350px;
+}
+.pdf-loading {
+display: inline-block;
+width: 50px;
+height: 50px;
+border: 3px solid #d2d0d0;;
+border-radius: 50%;
+border-top-color: #383838;
+animation: spin 1s ease-in-out infinite;
+-webkit-animation: spin 1s ease-in-out infinite;
+}
+#overlayText {
+word-wrap: break-word;
+display: grid;
+justify-content: end;
+}
+#overlayText a {
+position: relative;
+top: 10px;
+right: 4px;
+color: #000;
+margin: auto;
+background-color: #eeeeee;
+padding: 0.3em 1em;
+border: solid 2px;
+border-radius: 12px;
+border-color: #00000030;
+text-decoration: none;
+}
+#overlayText svg {
+height: clamp(1em, 2vw, 1.4em);
+width: clamp(1em, 2vw, 1.4em);
+}
+@keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+&lt;/style>&lt;div class="embed-pdf-container" id="embed-pdf-container-136df687">
+&lt;div class="pdf-loadingWrapper" id="pdf-loadingWrapper-136df687">
+&lt;div class="pdf-loading" id="pdf-loading-136df687">&lt;/div>
+&lt;/div>
+&lt;div id="overlayText">
+&lt;a href="/pdfs/202507/114080_02_202_2085_27720090_11408049116215016157_ExamNotice.pdf" aria-label="Download" download>
+&lt;svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+&lt;path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;canvas class="pdf-canvas" id="pdf-canvas-136df687">&lt;/canvas>
+&lt;/div>
+&lt;div class="pdf-paginator" id="pdf-paginator-136df687">
+&lt;button id="pdf-prev-136df687">Previous&lt;/button>
+&lt;button id="pdf-next-136df687">Next&lt;/button> &amp;nbsp; &amp;nbsp;
+&lt;span>
+&lt;span class="pdf-pagenum" id="pdf-pagenum-136df687">&lt;/span> / &lt;span class="pdf-pagecount" id="pdf-pagecount-136df687">&lt;/span>
+&lt;/span>
+&lt;a class="pdf-source" id="pdf-source-136df687" href="/pdfs/202507/114080_02_202_2085_27720090_11408049116215016157_ExamNotice.pdf">[pdf]&lt;/a>
+&lt;/div>
+&lt;noscript>
+View the PDF file &lt;a class="pdf-source" id="pdf-source-noscript-136df687" href="/pdfs/202507/114080_02_202_2085_27720090_11408049116215016157_ExamNotice.pdf">here&lt;/a>.
+&lt;/noscript>
+&lt;script type="text/javascript">
+(function(){
+var url = '\/pdfs\/202507\/114080_02_202_2085_27720090_11408049116215016157_ExamNotice.pdf';
+var hidePaginator = "" === "true";
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+pdfjsLib.GlobalWorkerOptions.workerSrc = "\/" + 'js/pdf-js/build/pdf.worker.js';
+var pdfDoc = null,
+pageNum = selectedPageNum,
+pageRendering = false,
+pageNumPending = null,
+scale = 3,
+canvas = document.getElementById('pdf-canvas-136df687'),
+ctx = canvas.getContext('2d'),
+paginator = document.getElementById("pdf-paginator-136df687"),
+loadingWrapper = document.getElementById('pdf-loadingWrapper-136df687');
+showPaginator();
+showLoader();
+function renderPage(num) {
+pageRendering = true;
+pdfDoc.getPage(num).then(function(page) {
+var viewport = page.getViewport({scale: scale});
+canvas.height = viewport.height;
+canvas.width = viewport.width;
+var renderContext = {
+canvasContext: ctx,
+viewport: viewport
+};
+var renderTask = page.render(renderContext);
+renderTask.promise.then(function() {
+pageRendering = false;
+showContent();
+if (pageNumPending !== null) {
+renderPage(pageNumPending);
+pageNumPending = null;
+}
+});
+});
+document.getElementById('pdf-pagenum-136df687').textContent = num;
+}
+function showContent() {
+loadingWrapper.style.display = 'none';
+canvas.style.display = 'block';
+}
+function showLoader() {
+if(hideLoader) return
+loadingWrapper.style.display = 'flex';
+canvas.style.display = 'none';
+}
+function showPaginator() {
+if(hidePaginator) return
+paginator.style.display = 'block';
+}
+function queueRenderPage(num) {
+if (pageRendering) {
+pageNumPending = num;
+} else {
+renderPage(num);
+}
+}
+function onPrevPage() {
+if (pageNum &lt;= 1) {
+return;
+}
+pageNum--;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-prev-136df687').addEventListener('click', onPrevPage);
+function onNextPage() {
+if (pageNum >= pdfDoc.numPages) {
+return;
+}
+pageNum++;
+queueRenderPage(pageNum);
+}
+document.getElementById('pdf-next-136df687').addEventListener('click', onNextPage);
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+pdfDoc = pdfDoc_;
+var numPages = pdfDoc.numPages;
+document.getElementById('pdf-pagecount-136df687').textContent = numPages;
+if(pageNum > numPages) {
+pageNum = numPages
+}
+renderPage(pageNum);
+});
+})();
+&lt;/script></description></item><item><title>測試2024</title><link>/post/%E6%B8%AC%E8%A9%A62024/</link><pubDate>Wed, 27 Nov 2024 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62024/</guid><description>&lt;p>測試2024&lt;/p></description></item><item><title>測試2023</title><link>/post/%E6%B8%AC%E8%A9%A62023/</link><pubDate>Mon, 27 Nov 2023 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62023/</guid><description>&lt;p>測試2023&lt;/p></description></item><item><title>測試2022</title><link>/post/%E6%B8%AC%E8%A9%A62022/</link><pubDate>Sun, 27 Nov 2022 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62022/</guid><description>&lt;p>測試2022&lt;/p></description></item><item><title>全部文章</title><link>/page/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>/page/archives/</guid><description/></item><item><title>測試2021</title><link>/post/%E6%B8%AC%E8%A9%A62021/</link><pubDate>Sat, 27 Nov 2021 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62021/</guid><description>&lt;p>測試2021&lt;/p></description></item><item><title>測試2020</title><link>/post/%E6%B8%AC%E8%A9%A62020/</link><pubDate>Fri, 27 Nov 2020 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62020/</guid><description>&lt;p>測試2020&lt;/p></description></item><item><title>測試2019</title><link>/post/%E6%B8%AC%E8%A9%A62019/</link><pubDate>Wed, 27 Nov 2019 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62019/</guid><description>&lt;p>測試2019&lt;/p></description></item><item><title>測試2018</title><link>/post/%E6%B8%AC%E8%A9%A62018/</link><pubDate>Tue, 27 Nov 2018 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62018/</guid><description>&lt;p>測試2018&lt;/p></description></item><item><title>測試2017</title><link>/post/%E6%B8%AC%E8%A9%A62017/</link><pubDate>Mon, 27 Nov 2017 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62017/</guid><description>&lt;p>測試2017&lt;/p></description></item><item><title>測試2016</title><link>/post/%E6%B8%AC%E8%A9%A62016/</link><pubDate>Sun, 27 Nov 2016 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62016/</guid><description>&lt;p>測試2016&lt;/p></description></item><item><title>測試2015</title><link>/post/%E6%B8%AC%E8%A9%A62015/</link><pubDate>Fri, 27 Nov 2015 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62015/</guid><description>&lt;p>測試2015&lt;/p></description></item><item><title>測試2014</title><link>/post/%E6%B8%AC%E8%A9%A62014/</link><pubDate>Thu, 27 Nov 2014 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62014/</guid><description>&lt;p>測試2014&lt;/p></description></item><item><title>測試2013</title><link>/post/%E6%B8%AC%E8%A9%A62013/</link><pubDate>Wed, 27 Nov 2013 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62013/</guid><description>&lt;p>測試2013&lt;/p></description></item><item><title>測試2012</title><link>/post/%E6%B8%AC%E8%A9%A62012/</link><pubDate>Tue, 27 Nov 2012 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62012/</guid><description>&lt;p>測試2012&lt;/p></description></item><item><title>測試2011</title><link>/post/%E6%B8%AC%E8%A9%A62011/</link><pubDate>Sun, 27 Nov 2011 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62011/</guid><description>&lt;p>測試2011&lt;/p></description></item><item><title>測試2010</title><link>/post/%E6%B8%AC%E8%A9%A62010/</link><pubDate>Sat, 27 Nov 2010 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62010/</guid><description>&lt;p>測試2010&lt;/p></description></item><item><title>測試2009</title><link>/post/%E6%B8%AC%E8%A9%A62009/</link><pubDate>Fri, 27 Nov 2009 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62009/</guid><description>&lt;p>測試2009&lt;/p></description></item><item><title>測試2008</title><link>/post/%E6%B8%AC%E8%A9%A62008/</link><pubDate>Thu, 27 Nov 2008 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62008/</guid><description>&lt;p>測試2008&lt;/p></description></item><item><title>測試2007</title><link>/post/%E6%B8%AC%E8%A9%A62007/</link><pubDate>Tue, 27 Nov 2007 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62007/</guid><description>&lt;p>測試2007&lt;/p></description></item><item><title>測試2006</title><link>/post/%E6%B8%AC%E8%A9%A62006/</link><pubDate>Mon, 27 Nov 2006 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62006/</guid><description>&lt;p>測試2006&lt;/p></description></item><item><title>測試2005</title><link>/post/%E6%B8%AC%E8%A9%A62005/</link><pubDate>Sun, 27 Nov 2005 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62005/</guid><description>&lt;p>測試2005&lt;/p></description></item><item><title>測試2004</title><link>/post/%E6%B8%AC%E8%A9%A62004/</link><pubDate>Sat, 27 Nov 2004 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62004/</guid><description>&lt;p>測試2004&lt;/p></description></item><item><title>測試2003</title><link>/post/%E6%B8%AC%E8%A9%A62003/</link><pubDate>Thu, 27 Nov 2003 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62003/</guid><description>&lt;p>測試2003&lt;/p></description></item><item><title>測試2002</title><link>/post/%E6%B8%AC%E8%A9%A62002/</link><pubDate>Wed, 27 Nov 2002 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62002/</guid><description>&lt;p>測試2002&lt;/p></description></item><item><title>測試2001</title><link>/post/%E6%B8%AC%E8%A9%A62001/</link><pubDate>Tue, 27 Nov 2001 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62001/</guid><description>&lt;p>測試2001&lt;/p></description></item><item><title>測試2000</title><link>/post/%E6%B8%AC%E8%A9%A62000/</link><pubDate>Mon, 27 Nov 2000 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A62000/</guid><description>&lt;p>測試2000&lt;/p></description></item><item><title>測試1999</title><link>/post/%E6%B8%AC%E8%A9%A61999/</link><pubDate>Sat, 27 Nov 1999 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61999/</guid><description>&lt;p>測試1999&lt;/p></description></item><item><title>測試1998</title><link>/post/%E6%B8%AC%E8%A9%A61998/</link><pubDate>Fri, 27 Nov 1998 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61998/</guid><description>&lt;p>測試1998&lt;/p></description></item><item><title>測試1997</title><link>/post/%E6%B8%AC%E8%A9%A61997/</link><pubDate>Thu, 27 Nov 1997 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61997/</guid><description>&lt;p>測試1997&lt;/p></description></item><item><title>測試1996</title><link>/post/%E6%B8%AC%E8%A9%A61996/</link><pubDate>Wed, 27 Nov 1996 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61996/</guid><description>&lt;p>測試1996&lt;/p></description></item><item><title>測試1995</title><link>/post/%E6%B8%AC%E8%A9%A61995/</link><pubDate>Mon, 27 Nov 1995 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61995/</guid><description>&lt;p>測試1995&lt;/p></description></item><item><title>測試1994</title><link>/post/%E6%B8%AC%E8%A9%A61994/</link><pubDate>Sun, 27 Nov 1994 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61994/</guid><description>&lt;p>測試1994&lt;/p></description></item><item><title>測試1993</title><link>/post/%E6%B8%AC%E8%A9%A61993/</link><pubDate>Sat, 27 Nov 1993 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61993/</guid><description>&lt;p>測試1993&lt;/p></description></item><item><title>測試1992</title><link>/post/%E6%B8%AC%E8%A9%A61992/</link><pubDate>Fri, 27 Nov 1992 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61992/</guid><description>&lt;p>測試1992&lt;/p></description></item><item><title>測試1991</title><link>/post/%E6%B8%AC%E8%A9%A61991/</link><pubDate>Wed, 27 Nov 1991 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61991/</guid><description>&lt;p>測試1991&lt;/p></description></item><item><title>測試1990</title><link>/post/%E6%B8%AC%E8%A9%A61990/</link><pubDate>Tue, 27 Nov 1990 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61990/</guid><description>&lt;p>測試1990&lt;/p></description></item><item><title>測試1989</title><link>/post/%E6%B8%AC%E8%A9%A61989/</link><pubDate>Mon, 27 Nov 1989 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61989/</guid><description>&lt;p>測試1989&lt;/p></description></item><item><title>測試1988</title><link>/post/%E6%B8%AC%E8%A9%A61988/</link><pubDate>Sun, 27 Nov 1988 23:59:59 +0800</pubDate><guid>/post/%E6%B8%AC%E8%A9%A61988/</guid><description>&lt;p>測試1988&lt;/p></description></item><item><title>搜尋</title><link>/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/search/</guid><description/></item><item><title>連結</title><link>/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/links/</guid><description/></item><item><title>關於</title><link>/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/about/</guid><description>&lt;p>關於&lt;/p>
+&lt;p>Hsin Feng Huang&lt;/p>
+&lt;p>2025&lt;/p>
+&lt;p>高考三級資訊處理榜首&lt;/p>
+&lt;p>2026&lt;/p>
+&lt;p>經歷欄補充中&lt;/p>
+&lt;p>2027&lt;/p>
+&lt;p>2028&lt;/p>
+&lt;p>2029&lt;/p>
+&lt;p>2030&lt;/p>
+&lt;p>2031&lt;/p>
+&lt;p>2032&lt;/p>
+&lt;p>2033&lt;/p>
+&lt;p>2034&lt;/p>
+&lt;p>2035&lt;/p>
+&lt;p>2036&lt;/p>
+&lt;p>2037&lt;/p>
+&lt;p>2038&lt;/p>
+&lt;p>第12屆臺北市長(候選人)或第12屆臺北市代理市長&lt;/p>
+&lt;p>2039&lt;/p>
+&lt;p>2040&lt;/p>
+&lt;p>2041&lt;/p>
+&lt;p>2042&lt;/p>
+&lt;p>第13屆臺北市長(候選人)&lt;/p>
+&lt;p>健康考量優先&lt;/p></description></item></channel></rss>
