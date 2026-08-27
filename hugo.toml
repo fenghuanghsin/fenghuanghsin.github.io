@@ -14,9 +14,7 @@ enabled = true
 local = true
 src = "/img/avatar.png"
 
-[deployment]
-[[deployment]
-[[deployment.targets]
+[[deployment.targets]]
 name = "production"
 url = "s3://fenghuanghsin?region=ap-southeast-2"
 
@@ -25,13 +23,9 @@ url = "s3://fenghuanghsin?region=ap-southeast-2"
 [markup.goldmark.renderer]
 unsafe = true
 
-[menu]
 [menu.main]
-[menu.main.params]
-icon = "circle-info"
 
-[[menu]
-[[menu.main]
+[[menu.main]]
 identifier = "about"
 name = "關於"
 url = "/page/about/"
